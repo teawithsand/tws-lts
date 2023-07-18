@@ -9,7 +9,7 @@
 		"url": "https://github.com/teawithsand/tws-lts.git"
 	},
 	"scripts": {
-		"build": "tsc",
+		"build": "tsc && npm run doc",
 		"test": "jest",
 		"doc": "typedoc src/index.ts"
 	},
