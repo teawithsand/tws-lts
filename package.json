@@ -1,6 +1,6 @@
 {
 	"name": "@teawithsand/tws-lts",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Misc js utils migrated from tws-stl. Only most common stuff here.",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
