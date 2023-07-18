@@ -14,9 +14,9 @@
 		"doc": "typedoc src/index.ts"
 	},
 	"keywords": [
-		"teawithsand",
-		"player",
-		"music"
+		"utils",
+		"misc",
+		"throw-expression"
 	],
 	"author": "teawithsand",
 	"license": "MIT",
