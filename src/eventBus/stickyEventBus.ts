@@ -1,0 +1,40 @@
+import { DefaultEventBus, EventBus } from "./eventBus"
+import {
+	StickySubscribable,
+	Subscriber,
+	SubscriptionCanceler,
+} from "./subscribable"
+
+/**
+ * Event bus, which holds the last event sent.
+ */
+export interface StickyEventBus<T> extends EventBus<T>, StickySubscribable<T> {
+}
+
+export class DefaultStickyEventBus<T> implements StickyEventBus<T> {
+	private readonly innerBus = new DefaultEventBus<T>()
+
+	constructor(private innerLastEvent: T) {}
+
+	get lastEvent(): T {
+		return this.innerLastEvent
+	}
+
+	emitEvent = (event: T) => {
+		// Note: this behavior must be as-is
+		// before invocation of handler, last event must be updated
+		this.innerLastEvent = event
+		this.innerBus.emitEvent(event)
+	}
+
+	addSubscriber = (
+		subscriber: Subscriber<T>,
+		emitLastEventToNewSubscriber = true
+	): SubscriptionCanceler => {
+		const canceler = this.innerBus.addSubscriber(subscriber)
+		if (emitLastEventToNewSubscriber) {
+			subscriber(this.lastEvent, canceler)
+		}
+		return canceler
+	}
+}
