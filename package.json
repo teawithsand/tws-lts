@@ -1,9 +1,13 @@
 {
-	"name": "@teawithsand/tws-filesend",
-	"version": "0.2.1",
-	"description": "Send files over WebRTC like a pro using peerjs and little effort",
+	"name": "@teawithsand/tws-lts",
+	"version": "0.0.1",
+	"description": "Misc js utils migrated from tws-stl. Only most common stuff here.",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/teawithsand/tws-lts.git"
+	},
 	"scripts": {
 		"build": "tsc",
 		"test": "jest",
