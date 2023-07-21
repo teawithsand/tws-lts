@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>normalizeOrdering | @teawithsand/tws-lts</title><meta name="description" content="Documentation for @teawithsand/tws-lts"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>PerformanceTimestampMs | @teawithsand/tws-lts</title><meta name="description" content="Documentation for @teawithsand/tws-lts"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/search.js" id="tsd-search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base="..">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z" fill="var(--color-text)"></path></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -13,27 +13,19 @@
 <div class="tsd-page-title">
 <ul class="tsd-breadcrumb">
 <li><a href="../modules.html">@teawithsand/tws-lts</a></li>
-<li><a href="normalizeOrdering.html">normalizeOrdering</a></li></ul>
-<h1>Function normalizeOrdering</h1></div>
-<section class="tsd-panel">
-<ul class="tsd-signatures">
-<li class="tsd-signature tsd-anchor-link" id="normalizeOrdering"><span class="tsd-kind-call-signature">normalize<wbr/>Ordering</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">a</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/Ordering.html" class="tsd-signature-type tsd-kind-enum">Ordering</a><a href="#normalizeOrdering" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" id="icon-anchor"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"></path></g></svg></a></li>
-<li class="tsd-description">
-<div class="tsd-comment tsd-typography"><p>Takes number and makes it into ordering. </p>
-<p>Returns LESS when a &lt; 0
-Returns GREATER when a &gt; 0
-Returns EQUAL when a === 0</p>
-<p>Otherwise throws.</p>
+<li><a href="PerformanceTimestampMs.html">PerformanceTimestampMs</a></li></ul>
+<h1>Type alias PerformanceTimestampMs</h1></div>
+<div class="tsd-signature"><span class="tsd-kind-type-alias">Performance<wbr/>Timestamp<wbr/>Ms</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span><br/><span>    </span><span class="tsd-kind-property">s</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">unique </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
+<div class="tsd-comment tsd-typography"><p>Timestamp, which was yielded from non-backing performance clock rather than wall clock.</p>
 </div>
-<div class="tsd-parameters">
-<h4 class="tsd-parameters-title">Parameters</h4>
-<ul class="tsd-parameter-list">
-<li>
-<h5><span class="tsd-kind-parameter">a</span>: <span class="tsd-signature-type">number</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="../enums/Ordering.html" class="tsd-signature-type tsd-kind-enum">Ordering</a></h4>
+<div class="tsd-type-declaration">
+<h4>Type declaration</h4>
+<ul class="tsd-parameters">
+<li class="tsd-parameter">
+<h5><code class="tsd-tag ts-flagReadonly">Readonly</code> <span class="tsd-kind-property">s</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">unique </span><span class="tsd-signature-type">symbol</span></h5></li></ul></div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/teawithsand/tws-lts/blob/513aca2/src/lang/comparator.ts#L24">src/lang/comparator.ts:24</a></li></ul></aside></li></ul></section></div>
+<li>Defined in <a href="https://github.com/teawithsand/tws-lts/blob/513aca2/src/lang/timestamp.ts#L20">src/lang/timestamp.ts:20</a></li></ul></aside></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -68,32 +60,32 @@ Returns EQUAL when a === 0</p>
 <li><a href="../interfaces/StickyEventBus.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Sticky<wbr/>Event<wbr/>Bus</span></a></li>
 <li><a href="../interfaces/StickySubscribable.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Sticky<wbr/>Subscribable</span></a></li>
 <li><a href="../interfaces/Subscribable.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Subscribable</span></a></li>
-<li><a href="../types/Comparator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4194304"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-type-alias)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)"></path></g></svg><span>Comparator</span></a></li>
-<li><a href="../types/PerformanceTimestampMs.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Performance<wbr/>Timestamp<wbr/>Ms</span></a></li>
-<li><a href="../types/Subscriber.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Subscriber</span></a></li>
-<li><a href="../types/SubscriptionCanceler.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Subscription<wbr/>Canceler</span></a></li>
-<li><a href="../types/TimestampMs.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Timestamp<wbr/>Ms</span></a></li>
-<li><a href="busReadSingleEvent.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-64"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-function)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.39 16V7.24H14.55V8.224H10.446V11.128H14.238V12.112H10.47V16H9.39Z" fill="var(--color-text)"></path></g></svg><span>bus<wbr/>Read<wbr/>Single<wbr/>Event</span></a></li>
-<li><a href="chainComparators.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>chain<wbr/>Comparators</span></a></li>
-<li><a href="chainOrderings.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>chain<wbr/>Orderings</span></a></li>
-<li><a href="compareBigInt.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>compare<wbr/>Big<wbr/>Int</span></a></li>
-<li><a href="compareNumbers.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>compare<wbr/>Numbers</span></a></li>
-<li><a href="compareStrings.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>compare<wbr/>Strings</span></a></li>
-<li><a href="compareStringsNatural.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>compare<wbr/>Strings<wbr/>Natural</span></a></li>
-<li><a href="formatDurationSeconds.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>format<wbr/>Duration<wbr/>Seconds</span></a></li>
-<li><a href="generateUUID.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>generateUUID</span></a></li>
-<li><a href="getNowPerformanceTimestamp.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>get<wbr/>Now<wbr/>Performance<wbr/>Timestamp</span></a></li>
-<li><a href="getNowTimestamp.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>get<wbr/>Now<wbr/>Timestamp</span></a></li>
-<li><a href="inverseComparator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>inverse<wbr/>Comparator</span></a></li>
-<li><a href="inverseOrdering.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>inverse<wbr/>Ordering</span></a></li>
-<li><a href="latePromise.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>late<wbr/>Promise</span></a></li>
-<li><a href="normalizeOrdering.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>normalize<wbr/>Ordering</span></a></li>
-<li><a href="simpleSleep.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>simple<wbr/>Sleep</span></a></li>
-<li><a href="sleep.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>sleep</span></a></li>
-<li><a href="sorted.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>sorted</span></a></li>
-<li><a href="throwExpression.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>throw<wbr/>Expression</span></a></li>
-<li><a href="throwExpressionLazy.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>throw<wbr/>Expression<wbr/>Lazy</span></a></li>
-<li><a href="timestampToDate.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>timestamp<wbr/>To<wbr/>Date</span></a></li></ul></nav></div></div></div>
+<li><a href="Comparator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4194304"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-type-alias)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)"></path></g></svg><span>Comparator</span></a></li>
+<li><a href="PerformanceTimestampMs.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Performance<wbr/>Timestamp<wbr/>Ms</span></a></li>
+<li><a href="Subscriber.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Subscriber</span></a></li>
+<li><a href="SubscriptionCanceler.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Subscription<wbr/>Canceler</span></a></li>
+<li><a href="TimestampMs.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Timestamp<wbr/>Ms</span></a></li>
+<li><a href="../functions/busReadSingleEvent.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-64"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-function)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.39 16V7.24H14.55V8.224H10.446V11.128H14.238V12.112H10.47V16H9.39Z" fill="var(--color-text)"></path></g></svg><span>bus<wbr/>Read<wbr/>Single<wbr/>Event</span></a></li>
+<li><a href="../functions/chainComparators.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>chain<wbr/>Comparators</span></a></li>
+<li><a href="../functions/chainOrderings.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>chain<wbr/>Orderings</span></a></li>
+<li><a href="../functions/compareBigInt.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>compare<wbr/>Big<wbr/>Int</span></a></li>
+<li><a href="../functions/compareNumbers.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>compare<wbr/>Numbers</span></a></li>
+<li><a href="../functions/compareStrings.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>compare<wbr/>Strings</span></a></li>
+<li><a href="../functions/compareStringsNatural.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>compare<wbr/>Strings<wbr/>Natural</span></a></li>
+<li><a href="../functions/formatDurationSeconds.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>format<wbr/>Duration<wbr/>Seconds</span></a></li>
+<li><a href="../functions/generateUUID.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>generateUUID</span></a></li>
+<li><a href="../functions/getNowPerformanceTimestamp.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>get<wbr/>Now<wbr/>Performance<wbr/>Timestamp</span></a></li>
+<li><a href="../functions/getNowTimestamp.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>get<wbr/>Now<wbr/>Timestamp</span></a></li>
+<li><a href="../functions/inverseComparator.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>inverse<wbr/>Comparator</span></a></li>
+<li><a href="../functions/inverseOrdering.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>inverse<wbr/>Ordering</span></a></li>
+<li><a href="../functions/latePromise.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>late<wbr/>Promise</span></a></li>
+<li><a href="../functions/normalizeOrdering.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>normalize<wbr/>Ordering</span></a></li>
+<li><a href="../functions/simpleSleep.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>simple<wbr/>Sleep</span></a></li>
+<li><a href="../functions/sleep.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>sleep</span></a></li>
+<li><a href="../functions/sorted.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>sorted</span></a></li>
+<li><a href="../functions/throwExpression.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>throw<wbr/>Expression</span></a></li>
+<li><a href="../functions/throwExpressionLazy.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>throw<wbr/>Expression<wbr/>Lazy</span></a></li>
+<li><a href="../functions/timestampToDate.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>timestamp<wbr/>To<wbr/>Date</span></a></li></ul></nav></div></div></div>
 <div class="tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
 <div class="overlay"></div></body></html>
